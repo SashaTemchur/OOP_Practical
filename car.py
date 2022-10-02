@@ -24,6 +24,7 @@ turn_input3 = str(input(" PoliceTownCar Right or Left:"))
 
 
 class AllCars:
+    # Creates a master class that makes master data for all others
     def __init__(self, speed, color, name, is_police, go_stop, right_left):
         self.speed = speed
         self.color = color
@@ -34,6 +35,7 @@ class AllCars:
 
 
 class TownCar(AllCars):
+    # Creates a class TownCar that inherits the main class AllCars in this class displays the data you specified for the car
     def __init__(self, speed, color, name, is_police, go_stop, right_left):
         AllCars.__init__(self, speed, color, name,
                          is_police, go_stop, right_left)
@@ -50,6 +52,7 @@ class TownCar(AllCars):
 
 
 class SportCar(AllCars):
+    # Creates a class SportCar that inherits the main class AllCars in this class displays the data you specified for the car
     def __init__(self, speed, color, name, is_police, go_stop, right_left):
         AllCars.__init__(self, speed, color, name,
                          is_police, go_stop, right_left)
@@ -66,6 +69,7 @@ class SportCar(AllCars):
 
 
 class WorkCar(AllCars):
+    # Creates a class WorkCar that inherits the main class AllCars in this class displays the data you specified for the car
     def __init__(self, speed, color, name, is_police, go_stop, right_left):
         AllCars.__init__(self, speed, color, name,
                          is_police, go_stop, right_left)
@@ -82,6 +86,7 @@ class WorkCar(AllCars):
 
 
 class PoliceCar(AllCars):
+    # Creates a class PoliceCar that inherits the main class AllCars in this class displays the data you specified for the car
     def __init__(self, speed, color, name, is_police, go_stop, right_left):
         AllCars.__init__(self, speed, color, name,
                          is_police, go_stop, right_left)
@@ -98,12 +103,12 @@ class PoliceCar(AllCars):
 
 
 cars = TownCar(speed_input, color_input, name_input,
-               False, go_stop_input, turn_input)
+               False, go_stop_input, turn_input) # Specifies data for the machine
 cars1 = SportCar(speed_input1, color_input1, name_input1,
-                 False, go_stop_input1, turn_input1)
+                 False, go_stop_input1, turn_input1) # Specifies data for the machine
 cars2 = WorkCar(speed_input2, color_input2, name_input2,
-                False, go_stop_input2, turn_input2)
+                False, go_stop_input2, turn_input2) # Specifies data for the machine
 cars3 = PoliceCar(speed_input3, color_input3, name_input3,
-                  True, go_stop_input3, turn_input3)
+                  True, go_stop_input3, turn_input3) # Specifies data for the machine
 print(cars.get_decribed_name(), cars1.get_decribed_name(),
       cars2.get_decribed_name(), cars3.get_decribed_name())
