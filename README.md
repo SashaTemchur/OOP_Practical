@@ -7,3 +7,4 @@ This is a program about cars, 4 classes and 1 basic, you drive, car speed, color
 Та друга програма, в якій ви пишете здоров'я гравця, захист і пошкодження, і те ж саме для ворога і вони б'ються.
 
 And the second program where you write the player's health, defense and damage and the same for the enemy and they fight.
+
